@@ -1,0 +1,9 @@
+<launch>
+
+<rosparam command="load" file="$(find car)/config/file.yaml" />
+<node pkg="turtlesim" type="turtlesim_node" name="turtle" output="screen">   </node>
+<node pkg="car" type="forward_move.py" name="car_node" output="screen">   </node>
+
+
+
+</launch>
